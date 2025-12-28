@@ -116,7 +116,7 @@ The framework is organized into focused packages:
 - **`@donotdev/core`** - Foundation (hooks, stores, config, types)
 - **`@donotdev/ui`** - Composition layer (layouts, providers, routing)
 - **`@donotdev/components`** - Atomic UI elements (Radix-based, headless-styled)
-- **`@donotdev/features/*`** - Optional capabilities (auth, billing, CMS, CRUD, OAuth)
+- **`@donotdev/features/*`** - Optional capabilities (auth, billing, CRUD, OAuth)
 - **`@donotdev/cli`** - Scaffolding & dev tools
 - **`@donotdev/templates`** - Community templates
 
