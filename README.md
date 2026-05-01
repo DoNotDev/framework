@@ -2,21 +2,22 @@
 
 **The "Don't Reinvent the Wheel" Full-Stack Framework**
 
-AI-First • Zero-Config • Type-Safe • Production-Ready
+AI-First • Zero-Config • Type-Safe • Production-Ready • **Open source (MIT)**
 
 ---
 
-## 🎯 This Repository
+## This repository
 
-This is the **central hub** for the DoNotDev Framework:
+Public **community hub** for the DoNotDev framework:
 
-- **📚 Guides & Documentation** - Community-maintained guides for building with DoNotDev
-- **🐛 Issues & Bug Reports** - Report bugs, request features, discuss improvements
-- **💬 Community Discussions** - Share ideas, ask questions, collaborate
+- **Issues & bug reports** — report bugs, request features, and discuss improvements
+- **Documentation pointers** — links to published packages and the project site (this repo does not mirror the full monorepo)
+
+Framework packages are distributed on **npm** under the **MIT License**. See **[LICENSE.md](./LICENSE.md)** for the full license text.
 
 ---
 
-## 🚀 Quick Start
+## Quick start
 
 ```bash
 # Install CLI globally
@@ -24,7 +25,6 @@ npm install -g @donotdev/cli
 
 # Create a new project
 dndev init my-project
-$> my-app
 
 # Navigate and install dependencies
 cd my-project && bun install
@@ -33,119 +33,59 @@ cd my-project && bun install
 dndev dev my-app
 ```
 
-**Free to try!** No signup, no credit card. Just install and test. You'll see a watermark in development—purchase a license to remove it and deploy to production.
+Use **Bun** or **Node.js 20+**. After scaffolding, open the project in your editor and follow the generated **AGENTS.md** for agent-oriented workflows.
 
 ---
 
-## 📖 Documentation
+## Documentation
 
-### For Developers
-
-- **[Getting Started Guide](./guides/GETTING_STARTED.md)** - Your first app in minutes
-- **[Framework Overview](./guides/FRAMEWORK_OVERVIEW.md)** - Package structure and architecture
-- **[Component Catalog](./guides/COMPONENTS.md)** - All available UI components
-- **[Layout Presets](./guides/LAYOUTS.md)** - Pre-built layout patterns
-
-### For AI Agents
-
-- **[Agent Quick Start](./guides/AGENT_START_HERE.md)** - **Read this first** if you're an AI assistant
-- **[Import Patterns](./guides/IMPORT_PATTERNS.md)** - How to import from packages correctly
-- **[Component Philosophy](./guides/HOW_TO_USE.md)** - Props-based composition, zero CSS
-
-### Setup Guides
-
-- **[Installation](./guides/INSTALLATION.md)** - Set up your development environment
-- **[Pages Setup](./guides/PAGES_SETUP.md)** - File-based routing
-- **[Configuration](./guides/CONFIG_SETUP.md)** - App and build configuration
-- **[Internationalization](./guides/I18N_SETUP.md)** - Multi-language support
-- **[Theming](./guides/THEMING_SETUP.md)** - Customize themes and styles
-
-### Feature Guides
-
-- **[Authentication](./guides/AUTH_SETUP.md)** - User authentication
-- **[Billing](./guides/BILLING_SETUP.md)** - Stripe subscriptions
-- **[Features Overview](./guides/FEATURES.md)** - All optional feature packages
+- **Website:** [donotdev.com](https://donotdev.com)
+- **FAQ:** [donotdev.com/faq](https://donotdev.com/faq)
+- **npm scope:** [@donotdev on npm](https://www.npmjs.com/org/donotdev) — each package page includes usage and API notes
 
 ---
 
-## 🐛 Reporting Issues
+## Reporting issues
 
 Found a bug? Have a feature request?
 
-1. **Check existing issues** - Search to see if it's already reported
-2. **Create a new issue** - Use the appropriate template:
-   - 🐛 Bug report
-   - ✨ Feature request
-   - 📚 Documentation improvement
-   - 💬 Question/Discussion
+1. **Search existing issues** to avoid duplicates
+2. **Open a new issue** with steps to reproduce (for bugs) or a clear use case (for features)
 
-**Before reporting:**
-- Check the [FAQ](https://donotdev.com/faq) for common questions
-- Review existing issues to avoid duplicates
-- Include steps to reproduce (for bugs)
+**Before reporting:** check the [FAQ](https://donotdev.com/faq) for common questions.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
-We welcome contributions! Here's how you can help:
+We welcome community input:
 
-### Guides & Documentation
+- **Issues** — bugs, ideas, and documentation gaps (this repo is the right place)
+- **Code** — implementation is maintained in a private monorepo; fixes ship via published `@donotdev/*` releases. If you want to contribute code beyond issues, reach out via the website or an issue so we can coordinate
 
-- **Improve guides** - Fix typos, clarify explanations, add examples
-- **Add new guides** - Document patterns, best practices, tutorials
-- **Translate guides** - Help make documentation available in more languages
-
-### Bug Fixes & Features
-
-- **Report bugs** - Help us identify issues
-- **Suggest features** - Share your ideas
-- **Submit PRs** - Fix bugs, implement features (for paid customers)
-
-### Community Templates
-
-- **Share app shells** - Propose templates via PRs to `packages/cli/templates`
-- **Create examples** - Build example apps showcasing framework features
+**Guides and examples** — improvements to public docs or examples may be proposed via issues (or PRs if this repo gains tracked doc sources).
 
 ---
 
-## 📦 Package Structure
+## Package overview
 
-The framework is organized into focused packages:
+| Area | Packages |
+|------|----------|
+| Foundation | `@donotdev/core` |
+| Composition & routing | `@donotdev/ui` |
+| UI primitives | `@donotdev/components` |
+| Optional features | `@donotdev/features/*` (e.g. auth, billing) |
+| Tooling | `@donotdev/cli` |
+| Templates | `@donotdev/templates` (where published) |
 
-- **`@donotdev/core`** - Foundation (hooks, stores, config, types)
-- **`@donotdev/ui`** - Composition layer (layouts, providers, routing)
-- **`@donotdev/components`** - Atomic UI elements (Radix-based, headless-styled)
-- **`@donotdev/features/*`** - Optional capabilities (auth, billing, CRUD, OAuth)
-- **`@donotdev/cli`** - Scaffolding & dev tools
-- **`@donotdev/templates`** - Community templates
-
----
-
-## 💳 Licensing
-
-- **Free Trial** - Use locally indefinitely with watermark
-- **Developer Seat** - Lifetime access for development (unlimited personal projects)
-- **Project Deployment** - Required for each client project you deliver
-
-[View pricing →](https://donotdev.com/pricing) | [Purchase license →](https://donotdev.com/purchase)
+For an authoritative list and architecture notes, see published **README** files on npm and [donotdev.com](https://donotdev.com).
 
 ---
 
-## 🔗 Links
+## License
 
-- **Website:** [donotdev.com](https://donotdev.com)
-- **Documentation:** [This repository](./guides/)
-- **FAQ:** [donotdev.com/faq](https://donotdev.com/faq)
-- **Pricing:** [donotdev.com/pricing](https://donotdev.com/pricing)
+**MIT** — see [LICENSE.md](./LICENSE.md).
 
 ---
 
-## 📝 License
-
-See [LICENSE.md](./LICENSE.md) for details.
-
----
-
-**Built with ❤️ by [AMBROISE PARK Consulting](https://ambroise-park.com)**
-
+**Maintained by [AMBROISE PARK Consulting](https://ambroise-park.com)**
